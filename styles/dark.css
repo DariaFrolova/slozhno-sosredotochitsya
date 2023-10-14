@@ -2,11 +2,98 @@
   Специально для тёмной темы при наличии класса,
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
+   /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
 */
 
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--dark-color);
+
+  --dark-color:  #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --main-text-color: #F1B2CE; 
+  --main-font: 'IBM Plex Mono';
+}
+
+@media (prefers-color-scheme: dark) {
+
+a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: var(--main-text-color);
+}
+
+.decorated-element::before {
+  color: var(--accent-color);
+  content: 'REC';
+  position: absolute;
+  display: inline-block;
+  font-size: 18px;
+  font-family: var(--main-font);
+  font-weight: 400;
+}
+
+.decorated-element::after {
+  position: absolute;
+  content: '';
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
+  fill: var(--accent-color);
+  width: 9px;
+  height: 9px;
+}
+
+.footer::before {
+  content: ""; 
+  position: absolute; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 0;
+  right: 0;
+  border-top: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.footer::after {
+  content: ""; 
+  position: absolute; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header::before {
+  content: ""; 
+  position: absolute; 
+  width: 25px; 
+  height: 25px; 
+  right: 0;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+  content: ""; 
+  position: absolute; 
+  width: 25px; 
+  height: 25px; 
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.content__content-section,
+.footer {
+  background-color: var(--dark-color);
+}
+
 }
