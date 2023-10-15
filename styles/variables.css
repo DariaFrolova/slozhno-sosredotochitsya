@@ -85,12 +85,12 @@
     padding-right: 10px;
   }
  
-  .paragraph-header {
+  .content__list-item_type_paragraph-header {
     margin-block-start: 20px;
     margin-bottom: 10px;
   }
 
-  .list-header  {
+  .content__list-item_type_list-header  {
     margin-block-start: 20px;
     margin-bottom: 10px;
   }
@@ -191,11 +191,11 @@
     padding-top: 40px;
   }
   
-  .content-paragraph {
+  .content__paragraph {
     padding-top: 10px;
   }
 
-  .paragraph-header {
+  .content__list-item_type_paragraph-header {
     margin-block-start: 20px;
   }
 
@@ -219,7 +219,7 @@
     width: 236px;
   }
 
-  .list-header   {
+  .content__list-item_type_list-header   {
     margin-block-start: 20px;
     margin-bottom: 10px;
   }
@@ -354,15 +354,15 @@
     padding: 0 20px;
   }
 
-  .content-paragraph {
+  .content__paragraph {
     padding-top: 10px;
   }
 
-  .paragraph-header {
+  .content__list-item_type_paragraph-header {
     margin-block-start: 20px;
   }
 
-  .content-title {
+  .content__title {
     margin-block-start: 20px;
   }
 
@@ -383,7 +383,7 @@
     width: 236px;
   }
 
-  .list-header  {
+  .content__list-item_type_list-header {
     margin-block-start: 20px;
     margin-bottom: 10px;
   }

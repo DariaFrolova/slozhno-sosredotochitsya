@@ -45,14 +45,14 @@ button:focus {
   pointer-events: none;
 }
 
-.content-title {
+.content__title {
   color: var(--accent-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px; 
 }
 
-.paragraph-header  {
+.content__list-item_type_paragraph-header  {
   background-color: var(--accent-color);
   color: var(--dark-color);
   font-family: var(--main-font);
@@ -61,7 +61,7 @@ button:focus {
   line-height: 23.4px;
 }
 
-.content-paragraph {
+.content__paragraph {
   color: var(--main-text-color);
   font-family: var(--main-font);
   font-size: 18px;
@@ -99,7 +99,7 @@ button:focus {
   line-height: 23.4px;
 }
 
-.list-header  {
+.content__list-item_type_list-header  {
   background-color: var(--accent-color);
   color: var(--dark-color);
   font-size: 18px;

@@ -64,17 +64,17 @@
     height: 26px;
     }
 
-  .content-title {
+  .content__title {
     color: var(--main-text-color-light);
   }
 
-  .paragraph-header {
+  .content__list-item_type_paragraph-header {
     background-color: var(--accent-color-light);
     color: var(--main-text-color-light);
     font-family: var(--main-font);
   }
 
-  .content-paragraph {
+  .content__paragraph {
     color: var(--main-text-color-light);
   }
 
@@ -92,7 +92,7 @@
     color: var(--main-text-color-light);
   }
   
-  .list-header {
+  .content__list-item_type_list-header {
     background-color: var(--accent-color-light);
     color: var(--main-text-color-light);
   }
