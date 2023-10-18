@@ -11,28 +11,28 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-a {
+.accent-word {
   text-decoration: none;
 }
 
-a:hover {
+.accent-word:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
-a:focus {
+.accent-word:focus {
   outline: 1px solid;
   width: 100%;
   height: 22px;
 }
 
-button:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid;
   height: 26px;
   width: 70px;
 }
 
-button:focus {
+.header__theme-menu-button:focus {
   outline: none;
   text-decoration: underline;
 }

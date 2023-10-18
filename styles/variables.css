@@ -11,6 +11,8 @@
   --main-font: 'IBM Plex Mono';
 }
 
+/* @media (min-width: 375px) and (max-width: 767px)  */
+
 @media (min-width: 375px) and (max-width: 767px) {
   
   .header__theme-menu-button_type_dark {
@@ -50,6 +52,7 @@
 
   .header__theme-menu-list {
     display: flex;
+    justify-content: center;
     gap: 10px;
     flex-direction: column;
   }

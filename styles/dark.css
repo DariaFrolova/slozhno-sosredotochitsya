@@ -7,22 +7,29 @@
     чем стили в медиазапросе предпочтений пользователя
 */
 
-.page.theme_dark {
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: var(--dark-color);
 
+  .page.theme_dark {
+    background-image: url(../images/cover-image-dark.png);
+    background-color: var(--dark-color);
+    /* --dark-color:  #000028;
+    --title-color: #DB00FF;
+    --accent-color: #FF0070;
+    --main-text-color: #F1B2CE; 
+    --main-font: 'IBM Plex Mono'; */
+  }
+ 
+ @media (prefers-color-scheme: dark) {
+  
+    /* :root {
     --dark-color:  #000028;
     --title-color: #DB00FF;
     --accent-color: #FF0070;
     --main-text-color: #F1B2CE; 
-    --main-font: 'IBM Plex Mono';
-  }
-
-@media (prefers-color-scheme: dark) {
-
-a:hover {
+    --main-font: 'IBM Plex Mono'; 
+    } */
+  
+ 
+  .accent-word:hover {
   text-decoration-line: underline;
   text-decoration-color: var(--main-text-color);
 }

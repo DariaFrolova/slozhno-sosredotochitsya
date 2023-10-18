@@ -1,136 +1,78 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+:root {
+  --light-color: #FFF1F7;
+    --title-color-light: #FFC2E6;
+    --accent-color-light:#FF8DCB ;
+    --main-text-color-light:#353130; 
+    --main-font: 'IBM Plex Mono';   
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  --light-color: #FFF1F7;
-  --title-color-light: #FFC2E6;
-  --accent-color-light:#FF8DCB ;
-  --main-text-color-light:#353430; 
-  --main-font: 'IBM Plex Mono'; 
-}
-
-@media (prefers-color-scheme: light) {
-
-  :root {
-    --light-color: #FFF1F7;
-    --title-color-light: #FFC2E6;
-    --accent-color-light:#FF8DCB ;
-    --main-text-color-light:#353430; 
-    --main-font: 'IBM Plex Mono';    
-
-  }
-
-  .page {
+    чем стили в медиазапросе предпочтений пользователя */
     background-image: url(../images/cover-image-light.png);
     background-color: var(--light-color);
-  }
+} 
 
-  a:hover {
-    text-decoration-line: underline;
-    text-decoration-color: var(--accent-color-light);
 
-  } 
-
-  a:focus {
-    outline: 1px solid var(--main-text-color-light);
-
-  }
-
-  button:hover {
-    outline: 1px solid var(--accent-color-light);
-
-  }
-
-  button:focus {
-    outline: none;
-    text-decoration: underline;
-
-  }
-  
-  .header__theme-menu-button_type_dark {
-    outline: none;
-
-  }
-  
-  .content__content-section,
-  .footer {
+.theme_light .content__content-section,
+.theme_light .footer {
      background-color: var(--light-color);
-
   }  
-  
-  .header__theme-menu-button_type_light {
+
+.theme_light .header__theme-menu-button_type_light {
     outline: 1px solid var(--main-text-color-light);
     width: 74px;
     height: 26px;
   }
 
-
-  .content__title {
-    color: var(--main-text-color-light);
-
+.theme_light .header__theme-menu-button_type_dark {
+    outline: none;
   }
 
-  .content__list-item_type_paragraph-header {
+.theme_light .content__title {
+    color: var(--main-text-color-light);
+  }
+
+.theme_light .content__list-item_type_paragraph-header {
     background-color: var(--accent-color-light);
     color: var(--main-text-color-light);
     font-family: var(--main-font);
-
   }
 
-  .content__paragraph {
+.theme_light .content__paragraph {
     color: var(--main-text-color-light);
-
   }
 
-  .header__theme-menu-button {
+.theme_light .header__theme-menu-button {
     color: var(--main-text-color-light);
-
   }
 
-  .header__title {
+.theme_light .header__title {
     text-shadow: 4px 4px 0px var(--accent-color-light);
     color: var(--title-color-light);
-
   }
 
-  .header__content-paragraph {
+.theme_light .header__content-paragraph {
     background-color: var(--accent-color-light);
     color: var(--main-text-color-light);
-
   }
   
-  .content__list-item_type_list-header {
+.theme_light .content__list-item_type_list-header {
     background-color: var(--accent-color-light);
     color: var(--main-text-color-light);
-
   }
 
-  .accent-word { 
+.theme_light .accent-word { 
     text-shadow: 2px 2px 0px var(--accent-color-light);
-
   }
   
-  .footer__title {
+.theme_light  .footer__title {
     text-shadow: 4px 4px 0px var(--accent-color-light);
     color: var(--title-color-light);
+  } 
 
-  }   
-
-  /* .footer::before,
-  .footer::after,
-  .header::before, 
-  .header::after {
-    color: var(--main-text-color-light);
-  } */
-
-  .footer::before {
+.theme_light.theme_light .footer::before {
     content: ""; 
     position: absolute; 
     width: 25px; 
@@ -141,7 +83,7 @@
     border-left: 1px solid var(--main-text-color-light);
   }
 
-  .footer::after {
+.theme_light .footer::after {
     content: ""; 
     position: absolute; 
     width: 25px; 
@@ -152,7 +94,7 @@
     border-bottom: 1px solid var(--main-text-color-light);
   }
 
-  .header::before {
+.theme_light .header::before {
     content: ""; 
     position: absolute; 
     width: 25px; 
@@ -162,7 +104,7 @@
     border-right: 1px solid var(--main-text-color-light);
   }
   
-  .header::after {
+.theme_light .header::after {
     content: ""; 
     position: absolute; 
     width: 25px; 
@@ -172,12 +114,27 @@
     border-left: 1px solid var(--main-text-color-light);
     border-bottom: 1px solid var(--main-text-color-light);
   }
+
+.theme_light .decorated-element::before, 
+.theme_light .decorated-element::after {
+      display: none;
+    }  
+
+.theme_light .accent-word:hover {
+      text-decoration-line: underline;
+      text-decoration-color: var(--accent-color-light);
+    } 
   
-
-  .decorated-element::before, 
-  .decorated-element::after {
-    display: none;
-  }
-
-}
+.theme_light .accent-word:focus {
+      outline: 1px solid var(--main-text-color-light);
+    }
+  
+.theme_light .header__theme-menu-button:hover {
+      outline: 1px solid var(--accent-color-light);
+    }
+  
+.theme_light .header__theme-menu-button:focus {
+      outline: none;
+      text-decoration: underline;
+    }    
 
