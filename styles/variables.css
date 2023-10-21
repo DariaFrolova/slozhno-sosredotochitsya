@@ -43,7 +43,6 @@
   right: 20px;
   }
 
-
   .header__theme-menu-button {
   height: 26px;
   width: 70px;
@@ -59,7 +58,8 @@
   .header__theme-menu {
   display: flex;
   justify-content: flex-end;
-  padding: 76.5px 10px 66.5px 308px;
+  /* padding: 76.5px 10px 66.5px 308px; */
+  padding: 66.5px 10px 66.5px 308px;
   }
 
   .header__content-paragraph {
@@ -123,7 +123,7 @@
   display: flex;
   width: 100%;
   min-height: 667px;
-  margin-top: 50px;
+  margin-top: 40px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -151,9 +151,12 @@
   @media (min-width: 768px) and (max-width: 1023px) {
 
   .header {
-  height: 1024px;
-  background-size: 100vw 1024px;
+  min-height: 1024px;
+  /* background-size: 100vw 1024px; */
+  background-size: 1634px, contain;
+  background-position: top;
   }
+
 
   .header::before {
   margin-block-start: 20px;
@@ -162,13 +165,13 @@
 
   .header::after {
   margin-bottom: 20px;
-  margin-right: calc(100vw - 35px);
+  margin-right: calc(100vw - 45px);
   }
 
   .header__theme-menu {
   display: flex;
   justify-content: flex-end;
-  padding: 193.5px 33px 174.5px 691px;
+  padding: 193.5px 20px 174.5px 691px;
   }
 
   .header__theme-menu-list {
@@ -200,7 +203,7 @@
   width: 364px;
   display: flex;
   flex-direction: column;
-  margin-left: calc(100vw - 364px);
+  margin-left: calc(100vw - 384px);
   }
 
   .header__title {
@@ -208,10 +211,11 @@
   font-size: 120px !important;
   }
 
+
   .content__text-block_type_first {
   display: flex;
   gap: 20px;
-  padding: 60px 20px 80px 20px;
+  padding: 50px 20px 70px 20px;
   }
 
   .content__paragraph {
@@ -235,15 +239,13 @@
   }
 
   .content__text-block_type_second {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 80px;
+  padding: 0px 20px 70px 20px;  
   }
 
   .content__text-block_type_third {
   display: flex;
   gap: 20px;
-  padding: 0px 20px 80px 20px;
+  padding: 0px 20px 79px 20px;
   }
 
   .block_type_third {
@@ -253,6 +255,15 @@
   .content__list-item_type_list-header   {
   margin-block-start: 20px;
   margin-bottom: 10px;
+  }
+
+  .title-text-block_type_image-block {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
   }
 
   .content__image-block {
