@@ -410,6 +410,7 @@
 
     .content__paragraph {
       padding-top: 10px;
+      padding-bottom: 10px;
     }
 
     .content__list-item_type_paragraph-header {
