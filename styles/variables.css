@@ -256,7 +256,8 @@
 
   .content__list-item_type_list-header   {
   margin-block-start: 20px;
-  margin-bottom: 10px;
+  /* margin-block-start: 10px; */
+  /* margin-bottom: 10px; */
   }
 
   .title-text-block_type_image-block {
@@ -278,7 +279,8 @@
   grid-template-columns: repeat(3, auto);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
-  padding: 20px 0px 60px 0px;
+  /* padding: 20px 0px 60px 0px; */
+  padding: 20px 0px 50px 0px;
   }
 
   .block--1 { 
@@ -333,9 +335,9 @@
   @media (min-width: 1024px) {
     .header {
       height: 768px;
-      background-position: center;
-      background-size: 100vw 768px;
-      margin-bottom: 60px;
+      background-size: 1225px, contain;
+      background-position: top;
+      margin-bottom: 40px;
     }
 
     .header::before {
@@ -389,7 +391,8 @@
     .content__text-block_type_first {
       display: flex;
       gap: 19.93px;
-      padding: 0px 20px 80px 20px;
+      /* padding: 0px 20px 80px 20px; */
+      padding: 0px 20px 65px 20px;
     }
 
     .content__text-block_type_second {
@@ -406,7 +409,7 @@
 
     .content__title {
       padding-top: 15px;
-      margin-bottom: 20px;
+      /* margin-bottom: 20px; */
       width: 315px;
       height: 70px; 
       flex-shrink: 0;
@@ -416,7 +419,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
-      padding-bottom: 80px;
+      padding-bottom: 65px;
     }
 
     .content__text-block_type_third {
@@ -431,12 +434,16 @@
 
     .content__list-item_type_list-header {
       margin-block-start: 20px;
-      margin-bottom: 10px;
+      /* margin-bottom: 10px; */
     }
 
     .content__image-block {
       padding: 0px 20px;
     }
+
+   .title-text-block_type_image-block {
+    font-size: 18px;
+   }
 
     .container-image {
       display: grid;
@@ -444,7 +451,8 @@
       grid-template-columns: repeat(3, auto);
       grid-column-gap: 20px;
       grid-row-gap: 20px;
-      padding: 20px 0px 60px 0px;
+      /* padding: 20px 0px 60px 0px; */
+      padding: 20px 0px 40px 0px;
     }
 
     .block--1 { 
