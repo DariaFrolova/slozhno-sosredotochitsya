@@ -401,7 +401,7 @@
       display: flex;
       gap: 19.93px;
       /* padding: 0px 20px 80px 20px; */
-      padding: 0px 20px 65px 20px;
+      padding: 0px 20px 55px 20px;
     }
 
     .content__text-block_type_second {
@@ -430,7 +430,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
-      padding-bottom: 55px;
+      padding-bottom: 45px;
     }
 
     .content__text-block_type_third {
