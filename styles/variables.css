@@ -413,7 +413,8 @@
     }
 
     .content__list-item_type_paragraph-header {
-      margin-block-start: 20px;
+      /* margin-block-start: 20px; */
+      margin-block-start: 10px;
     }
 
     .content__title {
@@ -435,6 +436,10 @@
       display: flex;
       gap: 20px;
       padding: 0px 20px 59px 20px;
+    }
+
+    .content__title .title-text-block_type_third {
+      padding-top: 10px !important;
     }
 
     .block_type_third {

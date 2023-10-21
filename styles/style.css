@@ -125,6 +125,12 @@
   max-width: 100%;
 }
 
+.title-text-block_type_image-block {
+  background-color: var(--accent-color);
+  color: var(--dark-color);
+  font-family: var(--main-font);
+}
+
 .footer__title {
   font-size: 116px;
   text-shadow: 4px 4px 0px var(--accent-color);
