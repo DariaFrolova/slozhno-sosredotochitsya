@@ -89,13 +89,13 @@
   } */
 
   .title-text-block_type_first {
-    margin-block-start: 50px;
+    margin-block-start: 40px;
     padding: 0 !important;
   }
 
   .title-text-block_type_second,
   .title-text-block_type_third {
-    margin-block-start: 40px;
+    margin-block-start: 50px;
     padding: 0 !important;
   }
 
