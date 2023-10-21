@@ -7,9 +7,12 @@
 }
 
 .page.theme_light {
-  background-image: url(../images/cover-image-light.png);
   background-color: var(--light-color);
 } 
+
+.theme_light .header { 
+  background-image: url(../images/cover-image-light.png);
+}
 
 .theme_light .content__content-section,
 .theme_light .footer {
@@ -55,6 +58,11 @@
 }
 
 .theme_light .content__list-item_type_list-header {
+  background-color: var(--accent-color-light);
+  color: var(--main-text-color-light);
+}
+
+.theme_light .title-text-block_type_image-block {
   background-color: var(--accent-color-light);
   color: var(--main-text-color-light);
 }

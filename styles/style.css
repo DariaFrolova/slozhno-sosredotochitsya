@@ -1,4 +1,4 @@
-.page {
+/* .page {
   margin: 0;
   background-color: var(--dark-color);
   font-family: var(--main-font);
@@ -6,7 +6,17 @@
   background-image: url(../images/cover-image-dark.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
+} */
+
+.page {
+  margin: 0;
+  background-color: var(--dark-color);
+  font-family: var(--main-font);
+  max-width: 100vw;
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
+
 
 .accent-word {
   text-decoration: none;
@@ -36,6 +46,8 @@
 
 .header{
   position: relative;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header__theme-menu-button_active {
