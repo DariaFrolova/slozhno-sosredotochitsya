@@ -8,8 +8,12 @@
 
   @media (max-width: 767px)  {  
 
- .header__theme-menu-button_type_dark {
+  .header__theme-menu-button_type_dark {
     outline: 1px solid var(--accent-color);
+  }
+
+  .header__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .header {
@@ -199,9 +203,9 @@
 
   .header__title {
     padding-bottom: 107px;
-    font-size: 120px !important;
-  }
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
+  }
 
   .content__text-block_type_first {
     display: flex;
@@ -316,6 +320,7 @@
     margin-right: calc(100vw - 45px);
     transform: scale(-1, 1);
   }
+  
  }
 
   @media (min-width: 1024px) {
@@ -372,7 +377,7 @@
 
   .header__title {
     margin-bottom: 114px !important;
-    font-size: 157px !important;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .content__text-block_type_first {
@@ -486,4 +491,5 @@
     margin-right: calc(100vw - 45px);
     transform: scale(-1, 1);
   }
+
   }
