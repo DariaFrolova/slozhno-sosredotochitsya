@@ -1,3 +1,11 @@
+:root.theme_dark  {
+  --dark-color:  #000028;
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --main-text-color: #F1B2CE; 
+  --main-font: 'IBM Plex Mono';
+}
+
 .page.theme_dark {
   background-color: var(--dark-color);
 }
