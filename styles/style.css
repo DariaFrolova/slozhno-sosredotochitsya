@@ -30,6 +30,7 @@
 .header__theme-menu-button:focus {
   outline: none;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .header{
