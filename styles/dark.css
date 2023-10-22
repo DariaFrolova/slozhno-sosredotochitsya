@@ -1,22 +1,4 @@
-/* :root.theme_dark {
-  --background-color: #000028;
-  --title-color: #db00ff;
-  --accent-color: #ff0070;
-  --main-text-color: #f1b2ce;
-  --main-font: "IBM Plex Mono";
-} */
-
-/* .page.theme_dark { */
-  /* background-color: var(--background-color); */
-/* } */
-
-/* .header {
-  background-image: url(../images/cover-image-dark.png);
-  перенесено в style css 
-} */
-
 .accent-word:hover {
-  /* text-decoration-line: underline; это дубль */
   text-decoration-color: var(--main-text-color);
 }
 
@@ -39,52 +21,4 @@
   fill: var(--accent-color);
   width: 9px;
   height: 9px;
-}
-
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  bottom: 0;
-  right: 0;
-  border-top: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
-}
-
-.footer::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  bottom: 0;
-  right: 0;
-  border-right: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.header::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: 0;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  bottom: 0;
-  right: 0;
-  border-left: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
-}
-
-.content__content-section,
-.footer {
-  background-color: var(--background-color);
 }
