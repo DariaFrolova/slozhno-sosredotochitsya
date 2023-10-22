@@ -7,6 +7,7 @@
 
 .accent-word {
   text-decoration: none;
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 .accent-word:hover {
@@ -100,10 +101,6 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 23.4px;
-}
-
-.accent-word {
-  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 .content__picture {
