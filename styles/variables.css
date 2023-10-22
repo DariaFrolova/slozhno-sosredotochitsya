@@ -219,7 +219,8 @@
 
   .content__title {
     padding-top: 20px;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    margin-bottom: 20px;
     width: 236px;
     min-height: 70px; 
     flex-shrink: 0;
@@ -353,6 +354,7 @@
 
   .header__theme-menu-list {
     display: flex;
+    justify-content: center;
     gap: 13px;
     flex-direction: row;
     padding: 21.5px 397px 274.5px 410px;
