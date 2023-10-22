@@ -1,22 +1,9 @@
-/* .page {
-  margin: 0;
-  background-color: var(--dark-color);
-  font-family: var(--main-font);
-  max-width: 100vw;
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-} */
-
 .page {
   margin: 0;
   background-color: var(--dark-color);
   font-family: var(--main-font);
   max-width: 100vw;
-  /* background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
-
 
 .accent-word {
   text-decoration: none;
@@ -121,7 +108,6 @@
 }
 
 .content__picture {
-  /* width: 100vw; */
   max-width: 100%;
 }
 
@@ -129,6 +115,9 @@
   background-color: var(--accent-color);
   color: var(--dark-color);
   font-family: var(--main-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
 }
 
 .footer__title {
