@@ -1,3 +1,21 @@
+/* 
+  Переменные для вашего проекта 
+  и их переопределение под различные устройства 
+  --
+  сюда мы разместили root для темной темы + media под различные типы устройства
+
+*/
+
+:root {
+  --background-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --main-text-color: #f1b2ce;
+  --main-font: "IBM Plex Mono";
+  /* имеет смысл перенести сюда background image как переменную */
+}
+
 @media (max-width: 767px) {
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -7,7 +25,6 @@
 
   .header {
     min-height: 668px;
-    background-size: 1068px, contain;
   }
 
   .header::before {
@@ -127,7 +144,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .header {
     min-height: 1024px;
-    background-size: 1634px, contain;
+    /* background-size: 1634px, contain; */
+    /* background-size: 100vw, contain;  */
   }
 
   .header::before {
@@ -224,7 +242,6 @@
   .title-text-block_type_image-block {
     background-color: var(--accent-color);
     color: var(--background-color);
-    font-family: var(--main-font);
     font-size: 18px;
     font-weight: 700;
     line-height: 23.4px;
@@ -308,15 +325,19 @@
   }
 
   .header__theme-menu-button {
-    height: 24px;
-    width: 66px;
+    height: 26px;
+    width: 70px;
   }
 
   .header__theme-menu-list {
     justify-content: center;
     gap: 13px;
     flex-direction: row;
-    padding: 19px 408px 274.5px 410px;
+  }
+
+  .header__theme-menu {
+    justify-content: center;
+    padding-top: 19px;
   }
 
   .decorated-element::before {
@@ -338,6 +359,7 @@
 
   .header__title {
     margin-bottom: 114px !important;
+    margin-top: 274.5px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
