@@ -9,6 +9,7 @@
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center top;
 }
 
 .decorated-element::before {
