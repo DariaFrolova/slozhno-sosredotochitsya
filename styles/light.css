@@ -18,7 +18,7 @@
   --light-hover-color: #32312d66;
 }
 
-.theme_light .header {
+.page.theme_light {
   background-image: var(--background-image);
 }
 

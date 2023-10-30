@@ -1,9 +1,6 @@
 /* 
   Переменные для вашего проекта 
   и их переопределение под различные устройства 
-  --
-  сюда мы разместили root для темной темы + media под различные типы устройства
-
 */
 
 :root {
@@ -13,10 +10,14 @@
   --accent-color: #ff0070;
   --main-text-color: #f1b2ce;
   --main-font: "IBM Plex Mono";
-  /* имеет смысл перенести сюда background image как переменную */
 }
 
 @media (max-width: 767px) {
+  .page {
+    background-size: 215vw 668px;
+    background-position: center top;
+  }
+
   .header__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-right: 10px;
@@ -142,10 +143,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .page {
+    background-size: 215vw 1024px;
+    background-position: center top;
+  }
+
   .header {
     min-height: 1024px;
-    /* background-size: 1634px, contain; */
-    /* background-size: 100vw, contain;  */
   }
 
   .header::before {
@@ -311,7 +315,11 @@
 @media (min-width: 1024px) {
   .header {
     min-height: 768px;
-    background-size: cover;
+  }
+
+  .page {
+    background-size: 120vw auto;
+    background-position: center top;
   }
 
   .header::before {

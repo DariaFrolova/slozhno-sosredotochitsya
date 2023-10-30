@@ -1,15 +1,14 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой.
-
-Сюда root не нужен 
-здесь мы описываем дефолтную страницу - темную. со всеми псевдоэлементами.
-цвета сюда уходят из variables
 */
 
 .page {
   margin: 0;
+  max-width: 100vw;
   background-color: var(--background-color);
   font-family: var(--main-font);
-  max-width: 100vw;
+  background-image: var(--background-image);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .decorated-element::before {
@@ -23,7 +22,6 @@
 }
 
 .decorated-element::after {
-  /* это - красная точка*/
   position: absolute;
   content: "";
   background-color: var(--accent-color);
@@ -57,10 +55,6 @@
 
 .header {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  background-image: var(--background-image);
 }
 
 .header__theme-menu-button_active {

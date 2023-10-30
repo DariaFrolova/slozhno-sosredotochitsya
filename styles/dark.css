@@ -19,6 +19,10 @@
   --light-hover-color: #ff007066;
 }
 
+.page.theme_dark {
+  background-image: var(--background-image);
+}
+
 .theme_dark .decorated-element::before,
 .theme_dark .decorated-element::after {
   display: block;
@@ -44,7 +48,6 @@
 }
 
 .theme_dark .header__content-paragraph,
-.theme_dark .content__list-item_type_paragraph-header,
 .theme_dark .content__list-item_type_paragraph-header,
 .theme_dark .content__list-item_type_list-header,
 .theme_dark .title-text-block_type_image-block {
