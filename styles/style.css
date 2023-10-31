@@ -95,7 +95,7 @@
   outline: 1px solid var(--accent-color);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   outline: none;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -226,7 +226,7 @@
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.accent-word:focus {
+.accent-word:focus-visible {
   outline: 1px solid;
   width: 100%;
   height: 22px;
